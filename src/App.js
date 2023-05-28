@@ -8,8 +8,17 @@ function App() {
   return (
     <ColorModeProvider>
       <>
-        <Header />
-        <main>{isLogged ? <ListarTarefa /> : <Login />}</main>
+        <main>
+          {isLogged ? (
+            <>
+              {" "}
+              <Header />
+              <ListarTarefa />
+            </>
+          ) : (
+            <Login />
+          )}
+        </main>
       </>
     </ColorModeProvider>
   );

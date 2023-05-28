@@ -6,7 +6,9 @@ import {
   Grid,
   Card,
   Button,
+  Typography,
 } from "@mui/material";
+
 import React, { useState } from "react";
 import { deepPurple } from "@mui/material/colors";
 
@@ -38,9 +40,12 @@ const Login = () => {
           alignItems: "center",
           justifyContent: "center",
           padding: 3,
+          flexWrap: "wrap",
+          gap: 3,
           bgcolor: deepPurple[500],
         }}
       >
+        <Typography variant="h4"> Login</Typography>
         <FormControl fullWidth>
           <InputLabel>usuario</InputLabel>
           <Input
@@ -53,8 +58,7 @@ const Login = () => {
             }}
           />
 
-          <FormHelperText id="tarefa_titulo_helper_text">Login.</FormHelperText>
-          <Button onClick={salvaLogin}>ok</Button>
+          <Button onClick={salvaLogin}>entrar</Button>
         </FormControl>
       </Grid>
     </Card>
