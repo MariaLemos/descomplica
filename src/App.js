@@ -9,6 +9,7 @@ function App() {
     <ColorModeProvider>
       <>
         <Header />
+        <main>{isLogged ? <ListarTarefa /> : <Login />}</main>
       </>
     </ColorModeProvider>
   );
